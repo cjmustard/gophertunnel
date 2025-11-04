@@ -230,6 +230,6 @@ const (
 	IDClientBoundControlSchemeSet
 	IDDebugDrawer
 	IDServerBoundPackSettingChange
-	_
+	IDDataStoreSync
 	IDGraphicsOverrideParameter
 )
