@@ -240,4 +240,5 @@ const (
 	IDVoxelShapes
 	IDCameraSpline
 	IDCameraAimAssistActorPriority
+	IDFish
 )

@@ -277,6 +277,7 @@ func init() {
 		IDVoxelShapes:                            func() Packet { return &VoxelShapes{} },
 		IDCameraSpline:                           func() Packet { return &CameraSpline{} },
 		IDCameraAimAssistActorPriority:           func() Packet { return &CameraAimAssistActorPriority{} },
+		IDFish:                                   func() Packet { return &Fish{} },
 	}
 	for id, pk := range serverOriginating {
 		RegisterPacketFromServer(id, pk)
@@ -366,6 +367,7 @@ func init() {
 		IDClientCameraAimAssist:           func() Packet { return &ClientCameraAimAssist{} },
 		IDUpdateClientOptions:             func() Packet { return &UpdateClientOptions{} },
 		IDServerBoundPackSettingChange:    func() Packet { return &ServerBoundPackSettingChange{} },
+		IDFish:                            func() Packet { return &Fish{} },
 	}
 	for id, pk := range clientOriginating {
 		RegisterPacketFromClient(id, pk)
